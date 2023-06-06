@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "13c8f35b-d5d1-4b4d-b5e5-bb3ac6f8253c",
+		"_postman_id": "e4efb29e-fd4c-4c0c-a724-26a67554e387",
 		"name": "NovaRoma",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "10281978"
+		"_exporter_id": "26745002"
 	},
 	"item": [
 		{
@@ -171,6 +171,118 @@
 						"api",
 						"tasks",
 						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Contatos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/agendas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"agendas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mostrar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/agendas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"agendas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adicionar Contatos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Ricardo\",\r\n  \"email\": \"ricardo@ricardo.com\",\r\n  \"celular\": \"81998167700\",\r\n  \"rua\": \"ASDASD\",\r\n  \"numero\": \"asasd\",\r\n  \"bairro\": \"asdasd\",\r\n  \"cidade\": \"asdasd\",\r\n  \"estado\": \"pe\",\r\n  \"cep\": \"55036050\",\r\n  \"complemento\": \"Casa\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/agendas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"agendas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remover Contatos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/agendas/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"agendas",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Contato",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/agendas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"agendas",
+						"1"
 					]
 				}
 			},

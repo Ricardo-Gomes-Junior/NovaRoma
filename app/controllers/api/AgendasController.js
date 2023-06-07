@@ -81,7 +81,7 @@ function AgendaController() {
 
   function update(req, res) {
     console.log(req.body);
-    const id = req.body.id;
+    const id = req.params.id;
 
     const agenda = {
         nome: req.body.nome,
